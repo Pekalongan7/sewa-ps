@@ -1,0 +1,1137 @@
+INFO - 2023-12-30 17:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:45:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:45:21 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_auth.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Auth.php(74): App\Models\M_auth->save_register(Array)
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Auth->save_register()
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 17:45:21 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_data_user` (`username`, `password`, `fullname`, `level`) VALUES (:username:, :password:, :fullname:, :level:)', [...], false)
+ 2 APPPATH\Models\M_auth.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Auth.php(74): App\Models\M_auth->save_register([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->save_register()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 17:45:49 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_auth.php(12): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Auth.php(74): App\Models\M_auth->save_register(Array)
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Auth->save_register()
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 17:45:49 --> Unknown column 'password' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_user` (`username`, `password`, `fullname`, `level`) VALUES (:username:, :password:, :fullname:, :level:)', [...], false)
+ 2 APPPATH\Models\M_auth.php(12): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Auth.php(74): App\Models\M_auth->save_register([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->save_register()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:47:54 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_distribusi_produk' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_home.php(11): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(23): App\Models\M_home->tot_distribusi()
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 17:47:54 --> Table 'penyewaan_ps.tbl_distribusi_produk' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `tbl_distribusi_produk`', null, false)
+ 2 APPPATH\Models\M_home.php(11): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH\Controllers\Home.php(23): App\Models\M_home->tot_distribusi()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:49:24 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_distribusi_produk' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_home.php(11): CodeIgniter\Database\BaseBuilder->countAll()
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(23): App\Models\M_home->tot_distribusi()
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 17:49:24 --> Table 'penyewaan_ps.tbl_distribusi_produk' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows` FROM `tbl_distribusi_produk`', null, false)
+ 2 APPPATH\Models\M_home.php(11): CodeIgniter\Database\BaseBuilder->countAll()
+ 3 APPPATH\Controllers\Home.php(23): App\Models\M_home->tot_distribusi()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:49:42 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:49:42 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:52:42 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:52:42 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:53:27 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:53:27 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:55:15 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:55:15 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:55:17 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:55:17 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:55:18 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:55:18 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:56:06 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:56:06 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 17:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 17:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 17:57:53 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 17:57:53 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 18:03:52 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 18:03:52 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 18:07:44 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 18:07:44 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 18:08:25 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 18:08:25 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 18:09:19 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 18:09:19 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 18:11:34 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 18:11:34 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 18:11:36 --> mysqli_sql_exception: Table 'penyewaan_ps.tbl_data_user' doesn't exist in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', Array, true)
+#8 C:\xampp\htdocs\sewa_ps\app\Views\layout\v_wrapper.php(3): view('layout/v_header')
+#9 C:\xampp\htdocs\sewa_ps\system\View\View.php(228): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\sewa_ps\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\sewa_ps\system\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 C:\xampp\htdocs\sewa_ps\app\Controllers\Home.php(25): view('layout/v_wrappe...', Array)
+#13 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#14 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#15 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-12-30 18:11:36 --> Table 'penyewaan_ps.tbl_data_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_data_user`
+WHERE `id_user` IS NULL', [], false)
+ 2 APPPATH\Views\layout\v_header.php(8): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_header.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_header', [], true)
+ 6 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_header')
+ 7 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 8 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+10 APPPATH\Controllers\Home.php(25): view('layout/v_wrapper', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:16:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:21:47 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:25:05 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:25:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:26:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:26:34 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:26:45 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:26:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:26:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(23): CodeIgniter\Model->__call('tot_ps', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:30:03 --> Undefined array key "nama_lengkap"
+in APPPATH\Views\user\v_user.php on line 45.
+ 1 APPPATH\Views\user\v_user.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_lengkap"', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\user\\v_user.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\user\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('user/v_user', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('user/v_user')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\User.php(26): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:30:41 --> Undefined array key "foto_user"
+in APPPATH\Views\user\v_user.php on line 55.
+ 1 APPPATH\Views\user\v_user.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_user"', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\user\\v_user.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\user\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('user/v_user', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('user/v_user')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\User.php(26): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:32:03 --> Undefined array key "foto_user"
+in APPPATH\Views\user\v_user.php on line 55.
+ 1 APPPATH\Views\user\v_user.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "foto_user"', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\user\\v_user.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\user\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('user/v_user', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('user/v_user')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\User.php(26): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:35:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:35:42 --> unlink(fotouser/1703936074_85f2bf9451e1de80d25e.png): No such file or directory
+in APPPATH\Controllers\User.php on line 177.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(fotouser/1703936074_85f2bf9451e1de80d25e.png): No such file or directory', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Controllers\\User.php', 177)
+ 2 APPPATH\Controllers\User.php(177): unlink('fotouser/1703936074_85f2bf9451e1de80d25e.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\User->update('2')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:36:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:38:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:44:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 18:46:07 --> Undefined variable $data_produk
+in APPPATH\Views\sewa\v_sewa.php on line 66.
+ 1 APPPATH\Views\sewa\v_sewa.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_produk', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_sewa.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_sewa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sewa/v_sewa', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('sewa/v_sewa')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Sewa_ps.php(28): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 18:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 18:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 19:33:49 --> Undefined variable $motif_produk
+in APPPATH\Views\sewa\v_add.php on line 35.
+ 1 APPPATH\Views\sewa\v_add.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $motif_produk', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_add.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_add.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sewa/v_add', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('sewa/v_add')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Sewa_ps.php(39): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->add()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 19:42:55 --> Undefined array key "nama_produk"
+in APPPATH\Views\sewa\v_sewa.php on line 74.
+ 1 APPPATH\Views\sewa\v_sewa.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_produk"', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_sewa.php', 74)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_sewa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sewa/v_sewa', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('sewa/v_sewa')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Sewa_ps.php(28): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 19:43:14 --> Undefined array key "id_produk"
+in APPPATH\Views\sewa\v_sewa.php on line 79.
+ 1 APPPATH\Views\sewa\v_sewa.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_produk"', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_sewa.php', 79)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_sewa.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sewa/v_sewa', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('sewa/v_sewa')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Sewa_ps.php(28): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->index()
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 19:51:14 --> mysqli_sql_exception: Unknown column 'id_produk' in 'where clause' in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 19:51:14 --> Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penyewaan_ps`
+WHERE `id_produk` = :id_produk:', [...], false)
+ 2 APPPATH\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 19:51:52 --> mysqli_sql_exception: Unknown column 'id_produk' in 'where clause' in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 19:51:52 --> Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penyewaan_ps`
+WHERE `id_produk` = :id_produk:', [...], false)
+ 2 APPPATH\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 19:52:13 --> mysqli_sql_exception: Unknown column 'id_produk' in 'where clause' in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 19:52:13 --> Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penyewaan_ps`
+WHERE `id_produk` = :id_produk:', [...], false)
+ 2 APPPATH\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 19:52:18 --> mysqli_sql_exception: Unknown column 'id_produk' in 'where clause' in C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\sewa_ps\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sewa_ps\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sewa_ps\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sewa_ps\app\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sewa_ps\app\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+#6 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+#7 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+#8 C:\xampp\htdocs\sewa_ps\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sewa_ps\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-12-30 19:52:18 --> Unknown column 'id_produk' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penyewaan_ps`
+WHERE `id_produk` = :id_produk:', [...], false)
+ 2 APPPATH\Models\M_sewa.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Sewa_ps.php(108): App\Models\M_sewa->detailSewa('1')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 19:52:35 --> Invalid file: "sewa_ps/v_edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('sewa_ps/v_edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sewa_ps/v_edit', [], true)
+ 3 APPPATH\Views\layout\v_content.php(3): view('sewa_ps/v_edit')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 7 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+ 8 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+ 9 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+11 APPPATH\Controllers\Sewa_ps.php(112): view('layout/v_wrapper', [...])
+12 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+13 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+14 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 19:52:55 --> Undefined variable $data_produk
+in APPPATH\Views\sewa\v_edit.php on line 27.
+ 1 APPPATH\Views\sewa\v_edit.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_produk', 'C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_edit.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\sewa\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('sewa/v_edit', [], true)
+ 5 APPPATH\Views\layout\v_content.php(3): view('sewa/v_edit')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_content.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 9 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+10 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\sewa_ps\\app\\Views\\layout\\v_wrapper.php')
+11 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+13 APPPATH\Controllers\Sewa_ps.php(112): view('layout/v_wrapper', [...])
+14 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Sewa_ps->edit('1')
+15 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sewa_ps))
+16 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 19:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 19:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
